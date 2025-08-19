@@ -1,2 +1,2 @@
 # PyQuest-RPG
-this is my text based rpg beginner project that i made
+This is my text-based RPG beginner project that I made.
