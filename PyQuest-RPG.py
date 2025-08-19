@@ -8,7 +8,7 @@ api_key_google = "AIzaSyDyD0yz2eNy9-7w6G-sGCcxXEv7IRDMGpc"
 
 
 class Colors:
-    """A class to hold ANSI color codes for beautifying terminal output."""
+    
     RESET = '\033[0m'
     BOLD = '\033[1m'
     HEADER = '\033[95m'
@@ -140,23 +140,23 @@ class Character:
 player = Character(name="Luffy", player_class="pirate")
 user_inventory = []
 
-# --- Helper Functions ---
+# Helper Functions 
 
 
 def clear_screen():
-    """Clears the terminal screen."""
+    
     os.system('cls' if os.name == 'nt' else 'clear')
 
 
 def print_header(title):
-    """Prints a styled header."""
+    
     print(f"\n{Colors.HEADER}{'=' * 50}{Colors.RESET}")
     print(f"{Colors.HEADER}{Colors.BOLD}{title.center(50)}{Colors.RESET}")
     print(f"{Colors.HEADER}{'=' * 50}{Colors.RESET}")
 
 
 def display_location_info():
-    """Prints the details of the player's current location."""
+    
     loc_id = player.location
     location = world_map[loc_id]
 
@@ -484,3 +484,4 @@ def play_game():
 
 if __name__ == "__main__":
     title_screen()
+
