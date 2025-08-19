@@ -4,7 +4,7 @@ import time
 import google.generativeai as gen_ai
 
 
-api_key_google = "AIzaSyDyD0yz2eNy9-7w6G-sGCcxXEv7IRDMGpc"
+api_key_google = my api key
 
 
 class Colors:
@@ -484,4 +484,5 @@ def play_game():
 
 if __name__ == "__main__":
     title_screen()
+
 
